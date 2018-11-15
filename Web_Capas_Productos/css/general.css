@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
@@ -10,11 +13,17 @@ body{
 #cont-menu > ul{
     list-style-type: none;
     margin: 0;
+    margin-left: 50px;
     padding: 0;
     overflow: hidden;
+    display: inline-block;
 }
 #cont-menu > ul > li{
     float: left;
+    border-bottom: 3px solid darkgreen;
+}
+#cont-menu > ul > li:hover{
+    border-bottom: 3px solid white;
 }
 #cont-menu > ul > li > a{
     display: block;
@@ -26,19 +35,30 @@ body{
     font-size: 1.3em;
 }
 #cont-menu > ul > li > a:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
+    
+}
+.bandera{
+    height: 40px;
+    float: right;
+    margin-right: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.bandera:hover{
+    filter: brightness(120%);
 }
 /*******  PRODUCTOS  ********/
 #cont-general{
     padding: 20px;
-    justify-content: center;
-
+    text-align: center;
 }
 .cont-producto{
     background-color: #ffd7fe;
     width: 250px;
-    margin: 10px;
-    float: left;
+    margin: 25px;
+    display: inline-block;
+    /*float: left;*/
     border-radius: 10px;
     box-shadow: 1px 2px 9px black;
 }
@@ -51,6 +71,7 @@ body{
 }
 .cont-producto > div > h2{
     margin-top: -45px;
+    text-align: left;
 }
 .cont-producto > div > h2::first-letter{
     font-weight: bold;

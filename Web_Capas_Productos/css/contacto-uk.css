@@ -1,0 +1,24 @@
+#cont-contacto > span{
+    font-size: 600px;
+    text-align: left;
+    color: darkgreen;
+}
+#cont-contacto > h1{
+    font-size: 35px;
+    margin-top: -550px;
+    margin-left: 450px;
+    color: darkgreen;
+}
+#cont-contacto > ul{
+    margin-left: 400px;
+    color: white;
+}
+#cont-contacto > img{
+    height:120px;
+    display: inline;
+    margin-left: 195px;
+}
+#mapa{
+    width: 100%;
+    margin-top: 100px;
+}
